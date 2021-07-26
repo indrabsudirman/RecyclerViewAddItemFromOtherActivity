@@ -33,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
         modelItemMurojaahArrayList.add(new ModelItemMurojaah("1", "Al-Fatihah", "1 - 7"));
         modelItemMurojaahArrayList.add(new ModelItemMurojaah("2", "Al-Baqarah", "1 - 10"));
         modelItemMurojaahArrayList.add(new ModelItemMurojaah("3", "Al-Kafirun", "1 - 5"));
+        modelItemMurojaahArrayList.add(new ModelItemMurojaah("4", "An-Naas", "1 - 4"));
+        modelItemMurojaahArrayList.add(new ModelItemMurojaah("5", "Al-Fiil", "1 - 6"));
 
         recyclerView = activityMainBinding.recyclerViewListMurojaah;
-        recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         adapter = new RecyclcerViewAdapter(modelItemMurojaahArrayList);
 
