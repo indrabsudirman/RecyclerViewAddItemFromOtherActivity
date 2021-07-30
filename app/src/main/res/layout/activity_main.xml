@@ -8,10 +8,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/layoutRecyclerView">
+        app:layout_constraintBottom_toBottomOf="@id/layoutButton"
+        android:id="@+id/layoutRecyclerView"
+        android:layout_marginBottom="50dp">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textViewRecylerEmpty"
@@ -50,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutButton"
-        app:layout_constraintTop_toBottomOf="@id/layoutRecyclerView">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
